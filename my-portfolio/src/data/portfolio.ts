@@ -1,4 +1,4 @@
-import { Link, Links } from "react-router-dom"
+
 
 export interface profile{
 name:string
@@ -19,7 +19,7 @@ links:{
 
 }
 
-export interface skill
+export interface Skill
 {
     name:string
     version:string
@@ -32,10 +32,10 @@ export interface skill
 
 export interface venue{
     name:string
-    data:string
+    date:string
 }
 
-export interface work{
+export interface Work{
 
     id:number
     title:string
@@ -59,7 +59,7 @@ export interface work{
 
 }
 
-export interface Gamejam
+export interface GameJam
 {
     name:string
     date:string
@@ -68,23 +68,23 @@ export interface Gamejam
     platform:string[]
     role:string
     team:string
-    reult:string |null
+    result:string |null
     url:string|null
     reflection:string
 }
 
-export type Certstatus = '取得済み' | '受験予定' |'取得予定' |'学習中'
+export type CertStatus = '取得済み' | '受験予定' |'取得予定' |'学習中'
 
 export interface Certification{
     name:string
     date:string
     category:string
     score:string |null
-    status:Certstatus
+    status:CertStatus
 }
 
 
-export interface timelineitem{
+export interface TimelineItem{
     year:string
     event:string
 }
@@ -107,7 +107,7 @@ export const profile ={
     school:'京都デザイン&テクノロジー専門学校',
     department:'スーパーゲームクリエイター専攻',
     graduationYear:'2028年3月卒業見込み',
-    bio:'「自分の好きが誰かの夢になること」を目指すゲームプログラマーです。チームでの活動をメインで行っていて特にプレイヤー関連のプログラムを担当して、「断罪クッキング」ではインスペクターから降ってくる食材や範囲を調整出来るようにするなどプログラマー以外も設定の把握がしやすいコードを意識しています。それだけにとどまらずマネージャー役も行っていてチームの進捗管理や会議進行なども行っており作業の細分化や意見を纏める事を得意としています。チームで活動する時にアイデアを積極的に出してこのチームに自分がいたから良いゲームが作れたと言われるような働きを意識しています。',
+    bio:'「自分の好きが誰かの夢になること」を目指すゲームクリエイターです。チームでの活動をメインで行っていて特にプレイヤー関連のプログラムを担当して、「断罪クッキング」ではインスペクターから降ってくる食材や範囲を調整出来るようにするなどプログラマー以外も設定の把握がしやすいコードを意識しています。それだけにとどまらずマネージャー役も行っていてチームの進捗管理や会議進行なども行っており作業の細分化や意見を纏める事を得意としています。チームで活動する時にアイデアを積極的に出してこのチームに自分がいたから良いゲームが作れたと言われるような働きを意識しています。',
     motto:'「夢は前に進む為の原動力」',
     avatar:null,
     Links:{
@@ -118,7 +118,7 @@ export const profile ={
 
 }
 
-export const skills: skill[]=[
+export const skills: Skill[]=[
 
 {
 
@@ -130,11 +130,86 @@ export const skills: skill[]=[
     note: 'チーム制作で主にプレイヤー操作部分をメインで担当',
 },
 {
+    name:'github',
+    version:'github.com/gyakuhannta',
+    level:50,
+    category:'vsc',
+    capabilities:['リポジトリ管理'],
+    note:'チーム制作、個人制作で使用',
+},
+{
+    name:'Adobe Premiere Pro 2026',
+    version:'動画編集',
+    level:30,
+    category:'',
+    capabilities:[],
+    note:'',
+},
+{
     name:'',
     version:'',
-    level:70,
+    level:40,
     category:'',
     capabilities:[],
     note:'',
 },
 ]
+
+export const works:Work[]=[
+{
+    id:1,
+    title:'断罪クッキング',
+    genre:'2Dタイムアタック',
+    thumbnail:null,
+    screenshots:[],
+    description:'unityで制作したチーム制作作品、初めてプログラマとして参加して主にプレイヤー操作、オブジェクト生成等を担当した。',
+    tags:['unity','チーム制作','プログラマ'],
+    platform:['windows'],
+    period:'',
+    team:'',
+    role:'',
+    github:'',
+    link:null,
+    venues:[],
+    techpoints:'',
+    designNootes:'',
+    implementationtheme:'',
+    category:'',
+    performance:''      
+    
+}
+
+]
+export const gameJams: GameJam[]=[
+{
+    name:'',
+    date:'',
+    theme:'',
+    description:'',
+    platform:[],
+    role:'',
+    team:'',
+   　result:null,
+    url:'',
+    reflection:''
+}
+]
+
+export const certifications: Certification[] = [
+  {
+    name:'',
+    date:'',
+    category:'',
+    score:'',
+    status:'取得済み'
+
+
+  }]
+
+ export const timeline: TimelineItem[] = 
+ [
+    {
+        year:'',
+        event:''
+    }
+ ]

@@ -1,0 +1,7 @@
+.EX_pezi-mine
+{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
