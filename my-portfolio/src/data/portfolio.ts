@@ -126,8 +126,8 @@ export const skills: Skill[]=[
     version: '6000.3.8f1',
     level: 70,
     category: 'game',
-    capabilities: ['3D/2Dゲーム制作', '', ''],
-    note: 'チーム制作で主にプレイヤー操作部分をメインで担当',
+    capabilities: ['3D/2Dゲーム制作', 'ゲームエンジン', ],
+    note: 'チーム制作で主に使用',
 },
 {
     name:'github',
@@ -139,20 +139,27 @@ export const skills: Skill[]=[
 },
 {
     name:'Adobe Premiere Pro 2026',
-    version:'動画編集',
+    version:'',
     level:30,
-    category:'',
-    capabilities:[],
-    note:'',
+    category:'動画編集',
+    capabilities:['映像ツール',],
+    note:'多少の動画編集ができる程度',
 },
 {
-    name:'',
+    name:'イベントブース運営',
     version:'',
-    level:40,
-    category:'',
-    capabilities:[],
-    note:'',
-},
+    level:80,
+    category:'技術、特技',
+    capabilities:['イベント運営','特技','チーム活動'],
+    note:'小規模の人数でのイベントブースの運営など',
+},{
+    name:'キャンプ技術',
+    version:'',
+    level:100,
+    category:'技術、特技',
+    capabilities:['イベント運営','特技','チーム活動','アウトドア活動'],
+    note:'キャンプ技術全般、特にキャンプファイヤーとサイト設営が得意、一通り教えられるレベル',
+}
 ]
 
 export const works:Work[]=[
@@ -209,7 +216,36 @@ export const certifications: Certification[] = [
  export const timeline: TimelineItem[] = 
  [
     {
-        year:'',
-        event:''
-    }
+        year:'2024年4月',
+        event:'京都デザイン＆テクノロジー専門学校入学'
+    },
+       {
+        year:'2024年4月中盤',
+        event:'学生スタッフとしてオープンキャンパスにに初参加'
+    },
+    
+    {
+        year:'2024年3月',
+        event:'1年次終了、方向性をプログラマとプランナーで迷い取り敢えずプログラマーを選択'
+    },
+     {
+        year:'2025年4月',
+        event:'初めてのチーム作品「断罪クッキング」の製作開始、プログラマとして参加'
+    },
+     {
+        year:'2025年4月',
+        event:'新入生歓迎イベントに学生スタッフとして参加'
+    },
+     {
+        year:'2025年6月',
+        event:'スポーツ大会に実行委員として参加'
+    },
+     {
+        year:'2025年11月',
+        event:'学園祭で「断罪クッキング」を展示'
+    },
+     {
+        year:'2026年4月',
+        event:'チーム作品「救済心弾」制作開始'
+    },
  ]
